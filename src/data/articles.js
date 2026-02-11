@@ -1,0 +1,669 @@
+// Maqolalar ma'lumotlari - keyinchalik backenddan olinadi
+// Article data - will be fetched from backend later
+
+export const articles = [
+  {
+    id: 1,
+    title: "Labor market development trends, prospects and role in the field of pensions",
+    authors: "O'roqov Mamurali Odil o'g'li",
+    category: "economics",
+    year: "2026",
+    abstract:
+      "Maqolada mehnat bozorini rivojlantirish tendentsiyalari, istiqbollari va pensiya sohasidagi o'rni tahlil qilingan. Mehnat bozorining zamonaviy holati va uning pensiya tizimiga ta'siri ko'rib chiqilgan.",
+    pages: "8-17",
+    publishDate: "19.01.2026",
+    views: 253,
+    likes: 6,
+    downloads: 198,
+    language: "English",
+    keywords: [
+      "labor market",
+      "pension",
+      "development trends",
+      "employment",
+    ],
+    file: "/files/Maqolalar/Ma'murali-new article_19.01.2026.docx",
+  },
+  {
+    id: 2,
+    title:
+      "Опыт сми навоийской области в освещении социально-экономических процессов",
+    authors: "Azizbek Ruzimurodov Shonazarovich",
+    category: "economics",
+    year: "2026",
+    abstract:
+      "В статье рассматривается опыт средств массовой информации Навоийской области в освещении социально-экономических процессов региона. Анализируется роль СМИ в формировании общественного мнения о экономическом развитии.",
+    pages: "18-30",
+    publishDate: "19.01.2026",
+    views: 198,
+    likes: 12,
+    downloads: 156,
+    language: "Русский",
+    keywords: ["СМИ", "Навоийская область", "социально-экономические процессы"],
+    file: "/files/Maqolalar/A.Ruzimurodov.docx",
+  },
+  {
+    id: 3,
+    title:
+      "Qishloq xo'jaligida risklarni boshqarish: turlari va ta'sir etuvchi omillar",
+    authors: "Xamrokulov Sindor Qahramonovich",
+    category: "economics",
+    year: "2026",
+    abstract:
+      "Maqolada qishloq xo'jaligida risklarni boshqarish masalalari ko'rib chiqilgan. Risk turlari va ularga ta'sir etuvchi omillar tahlil qilingan hamda risklarni kamaytirish bo'yicha tavsiyalar ishlab chiqilgan.",
+    pages: "31-36",
+    publishDate: "19.01.2026",
+    views: 176,
+    likes: 8,
+    downloads: 134,
+    language: "O'zbek",
+    keywords: [
+      "qishloq xo'jaligi",
+      "risk boshqaruvi",
+      "omillar",
+      "agrar sektor",
+    ],
+    file: "/files/Maqolalar/Xamrakulov S.Q._Ilmi_maqola_19.01.2026.docx",
+  },
+  {
+    id: 4,
+    title:
+      "Navoiy viloyatida yengil va oziq-ovqat sanoatining mustaqillik yillaridagi rivojlanishi",
+    authors: "Xoliqulov Shuxratjon",
+    category: "history",
+    year: "2026",
+    abstract:
+      "Maqolada Navoiy viloyatida yengil va oziq-ovqat sanoatining mustaqillik yillaridagi rivojlanish jarayoni tahlil qilingan. Sanoat tarmoqlarining o'sish dinamikasi va istiqbollari ko'rib chiqilgan.",
+    pages: "37-42",
+    publishDate: "19.01.2026",
+    views: 145,
+    likes: 10,
+    downloads: 112,
+    language: "O'zbek",
+    keywords: [
+      "Navoiy viloyati",
+      "yengil sanoat",
+      "oziq-ovqat sanoati",
+      "mustaqillik",
+    ],
+    file: "/files/Maqolalar/Xoliqulov Shuxratjon.docx",
+  },
+  {
+    id: 5,
+    title:
+      "Ўзбекистонда солиқ сиёсатидаги ўзгаришлар ва уларнинг иқтисодиётга таъсири",
+    authors: "Axmedova Dilnoza Muzaffarovna",
+    category: "economics",
+    year: "2026",
+    abstract:
+      "Мақолада Ўзбекистонда солиқ сиёсатидаги ўзгаришлар ва уларнинг мамлакат иқтисодиётига таъсири таҳлил қилинган. Солиқ ислоҳотларининг самарадорлиги ва ривожланиш истиқболлари кўриб чиқилган.",
+    pages: "43-48",
+    publishDate: "19.01.2026",
+    views: 189,
+    likes: 14,
+    downloads: 145,
+    language: "O'zbek",
+    keywords: ["soliq siyosati", "iqtisodiyot", "O'zbekiston", "islohot"],
+    file: "/files/Maqolalar/Dilnoza Axmedova.docx",
+  },
+  {
+    id: 6,
+    title:
+      "Karyeralar bortlarining turg'unligini baholashda sonli usullarni kompleks qo'llash",
+    authors: "Norov G'ulomjon Mirzog'olib o'g'li",
+    category: "engineering",
+    year: "2026",
+    abstract:
+      "Maqolada karyeralar bortlarining turg'unligini baholashda sonli usullarni kompleks qo'llash masalalari ko'rib chiqilgan. Geotexnik tadqiqotlar asosida bort turg'unligini ta'minlash usullari tahlil qilingan.",
+    pages: "49-61",
+    publishDate: "19.01.2026",
+    views: 167,
+    likes: 9,
+    downloads: 128,
+    language: "O'zbek",
+    keywords: [
+      "karyera",
+      "bort turg'unligi",
+      "sonli usullar",
+      "geotexnika",
+    ],
+    file: "",
+  },
+  {
+    id: 7,
+    title:
+      "Yopishqoqlikni oshiruvchi reagent ta'sirida sanoat suspensiyasining oquvchanlik xususiyatlarini eksperimental va sonli tahlili",
+    authors: "Ahmadov Ilhom Aktam o'g'li",
+    category: "engineering",
+    year: "2026",
+    abstract:
+      "Maqolada yopishqoqlikni oshiruvchi reagent ta'sirida sanoat suspensiyasining oquvchanlik xususiyatlari eksperimental va sonli usullar yordamida tahlil qilingan.",
+    pages: "62-75",
+    publishDate: "19.01.2026",
+    views: 312,
+    likes: 15,
+    downloads: 245,
+    language: "O'zbek",
+    keywords: [
+      "suspensiya",
+      "oquvchanlik",
+      "reagent",
+      "eksperimental tahlil",
+    ],
+    file: "/files/Maqolalar/Ahmadov  Ilhom  Sharq universitati.docx",
+  },
+  {
+    id: 8,
+    title:
+      "Pedagogical and psychological foundations of ai-based methodological training for future primary school teachers",
+    authors: "Najmiddinova Gulnora Najmiddin qizi",
+    category: "pedagogy",
+    year: "2026",
+    abstract:
+      "The article examines pedagogical and psychological foundations of AI-based methodological training for future primary school teachers. Modern approaches to integrating artificial intelligence in teacher education are analyzed.",
+    pages: "76-83",
+    publishDate: "19.01.2026",
+    views: 203,
+    likes: 11,
+    downloads: 167,
+    language: "English",
+    keywords: [
+      "artificial intelligence",
+      "primary school",
+      "teacher training",
+      "methodology",
+    ],
+    file: "",
+  },
+  {
+    id: 9,
+    title:
+      "Oliy ta'lim tizimida loyiha boshqaruvining raqamli transformatsiyasi va boshqaruvda xolislikni ta'minlash",
+    authors: "Yodgorova Nafisa Baxriddinovnа",
+    category: "management",
+    year: "2026",
+    abstract:
+      "Maqolada oliy ta'lim tizimida loyiha boshqaruvining raqamli transformatsiyasi va boshqaruvda xolislikni ta'minlash masalalari ko'rib chiqilgan.",
+    pages: "84-88",
+    publishDate: "19.01.2026",
+    views: 142,
+    likes: 7,
+    downloads: 109,
+    language: "O'zbek",
+    keywords: [
+      "oliy ta'lim",
+      "loyiha boshqaruvi",
+      "raqamli transformatsiya",
+      "xolislik",
+    ],
+    file: "/files/Maqolalar/Yodgorova.doc",
+  },
+  {
+    id: 10,
+    title:
+      "Integrating digital technologies into english language instruction: a case of secondary education",
+    authors: "Barno Raxmatullaeva",
+    category: "pedagogy",
+    year: "2026",
+    abstract:
+      "The article explores the integration of digital technologies into English language instruction in secondary education. Modern methods and their effectiveness in language teaching are analyzed.",
+    pages: "89-98",
+    publishDate: "19.01.2026",
+    views: 156,
+    likes: 8,
+    downloads: 120,
+    language: "English",
+    keywords: [
+      "digital technologies",
+      "English language",
+      "secondary education",
+      "instruction",
+    ],
+    file: "/files/Maqolalar/Barno Rahmatullayeva.docx",
+  },
+  {
+    id: 11,
+    title: "The role of technology in second language acquisition",
+    authors: "Fariza Ergasheva O'lmas qizi",
+    category: "linguistics",
+    year: "2026",
+    abstract:
+      "This article examines the role of technology in second language acquisition. Various technological tools and their impact on language learning processes are analyzed.",
+    pages: "99-107",
+    publishDate: "19.01.2026",
+    views: 134,
+    likes: 6,
+    downloads: 98,
+    language: "English",
+    keywords: [
+      "technology",
+      "second language acquisition",
+      "language learning",
+    ],
+    file: "/files/Maqolalar/Ergasheva Fariza.docx",
+  },
+  {
+    id: 12,
+    title:
+      "Derivational and semantic principles of ecological terminology in uzbek and English",
+    authors: "Ruziyeva Muhayyo Baxtiyor qizi",
+    category: "linguistics",
+    year: "2026",
+    abstract:
+      "The article investigates derivational and semantic principles of ecological terminology in Uzbek and English languages. A comparative analysis of term formation patterns is presented.",
+    pages: "108-117",
+    publishDate: "19.01.2026",
+    views: 128,
+    likes: 5,
+    downloads: 95,
+    language: "English",
+    keywords: [
+      "ecological terminology",
+      "derivation",
+      "semantics",
+      "Uzbek",
+      "English",
+    ],
+    file: "/files/Maqolalar/Рузиева М.Б. мақола.docx",
+  },
+  {
+    id: 13,
+    title:
+      "The use of multimedia tools in developing oral speech skills in the educational process",
+    authors: "Sayidova Moxichexra Islomovna",
+    category: "pedagogy",
+    year: "2026",
+    abstract:
+      "The article discusses the use of multimedia tools in developing oral speech skills in the educational process. The effectiveness of various multimedia resources in language education is examined.",
+    pages: "118-121",
+    publishDate: "19.01.2026",
+    views: 171,
+    likes: 10,
+    downloads: 139,
+    language: "English",
+    keywords: [
+      "multimedia",
+      "oral speech",
+      "educational process",
+      "language skills",
+    ],
+    file: "/files/Maqolalar/Maqola Sayidova M+++++.docx",
+  },
+  {
+    id: 14,
+    title:
+      "Institutsional yondashuv asosida bo'lajak pedagoglarda kasbiy madaniyatni shakllantirish",
+    authors: "Hamroyev Murodullo Nemat o'g'li",
+    category: "pedagogy",
+    year: "2026",
+    abstract:
+      "Maqolada institutsional yondashuv asosida bo'lajak pedagoglarda kasbiy madaniyatni shakllantirish masalalari ko'rib chiqilgan. Pedagogik kadrlar tayyorlash tizimidagi zamonaviy yondashuvlar tahlil qilingan.",
+    pages: "122-131",
+    publishDate: "19.01.2026",
+    views: 148,
+    likes: 7,
+    downloads: 115,
+    language: "O'zbek",
+    keywords: [
+      "institutsional yondashuv",
+      "kasbiy madaniyat",
+      "pedagog",
+      "ta'lim",
+    ],
+    file: "/files/Maqolalar/Murodullo Hamroyev.doc",
+  },
+  {
+    id: 15,
+    title:
+      "Utilizing multimodal pedagogy: combining visual, spatial, gestural, audio, and linguistic modes",
+    authors: "Madina Muzaffarova Umid qizi",
+    category: "pedagogy",
+    year: "2026",
+    abstract:
+      "The article explores multimodal pedagogy that combines visual, spatial, gestural, audio, and linguistic modes in education. Practical implications for modern teaching are discussed.",
+    pages: "132-135",
+    publishDate: "19.01.2026",
+    views: 163,
+    likes: 11,
+    downloads: 125,
+    language: "English",
+    keywords: [
+      "multimodal pedagogy",
+      "visual",
+      "linguistic modes",
+      "teaching",
+    ],
+    file: "/files/Maqolalar/Muzaffarova Madina.docx",
+  },
+  {
+    id: 16,
+    title:
+      "Yoshlar emotsional intellekti va ijtimoiy muloqot ko'nikmalari o'rtasidagi bog'liqlik",
+    authors: "Qodirova Aziza Kamolovna",
+    category: "psychology",
+    year: "2026",
+    abstract:
+      "Maqolada yoshlar emotsional intellekti va ijtimoiy muloqot ko'nikmalari o'rtasidagi bog'liqlik tadqiq qilingan. Emotsional intellektning shaxslararo munosabatlarga ta'siri tahlil qilingan.",
+    pages: "136-141",
+    publishDate: "19.01.2026",
+    views: 137,
+    likes: 9,
+    downloads: 108,
+    language: "O'zbek",
+    keywords: [
+      "emotsional intellekt",
+      "ijtimoiy muloqot",
+      "yoshlar",
+      "psixologiya",
+    ],
+    file: "/files/Maqolalar/Qodirova Aziza Kamolovna.docx",
+  },
+  {
+    id: 17,
+    title: "Sotsiolingvistik metod va metodlar masalasi",
+    authors: "Safoyeva Shodiya Ma'ruf qizi",
+    category: "linguistics",
+    year: "2026",
+    abstract:
+      "Maqolada sotsiolingvistik metod va metodlar masalasi ko'rib chiqilgan. Tilshunoslikdagi sotsiolingvistik tadqiqot usullari va ularning qo'llanilishi tahlil qilingan.",
+    pages: "142-149",
+    publishDate: "19.01.2026",
+    views: 155,
+    likes: 8,
+    downloads: 118,
+    language: "O'zbek",
+    keywords: [
+      "sotsiolingvistika",
+      "metod",
+      "tilshunoslik",
+      "tadqiqot usullari",
+    ],
+    file: "/files/Maqolalar/Safoyeva Shodiya MAQOLA.docx",
+  },
+  {
+    id: 18,
+    title:
+      "Talabalarda til o'rganish motivatsiyasini shakllantirishning ilmiy asoslari",
+    authors: "Shavqieva Sabina Asqarali qizi",
+    category: "linguistics",
+    year: "2026",
+    abstract:
+      "Maqolada talabalarda til o'rganish motivatsiyasini shakllantirishning ilmiy asoslari ko'rib chiqilgan. Motivatsiyaning til o'rganish jarayonidagi o'rni va uni rivojlantirish yo'llari tahlil qilingan.",
+    pages: "150-156",
+    publishDate: "19.01.2026",
+    views: 192,
+    likes: 13,
+    downloads: 152,
+    language: "O'zbek",
+    keywords: [
+      "motivatsiya",
+      "til o'rganish",
+      "talabalar",
+      "ilmiy asos",
+    ],
+    file: "/files/Maqolalar/Shavkieva Sabina_Maqola (2).docx",
+  },
+  {
+    id: 19,
+    title:
+      "Shaxs psixologik barqarorligini ta'minlashda himoya mexanizmlarining funksional xususiyatlari",
+    authors: "Nasulloyeva Shahnoza Ilhom qizi",
+    category: "psychology",
+    year: "2026",
+    abstract:
+      "Maqolada shaxs psixologik barqarorligini ta'minlashda himoya mexanizmlarining funksional xususiyatlari tadqiq qilingan. Psixologik himoya mexanizmlari va ularning shaxs barqarorligiga ta'siri tahlil qilingan.",
+    pages: "157-166",
+    publishDate: "19.01.2026",
+    views: 185,
+    likes: 12,
+    downloads: 147,
+    language: "O'zbek",
+    keywords: [
+      "psixologik barqarorlik",
+      "himoya mexanizmlari",
+      "shaxs",
+      "funksional xususiyatlar",
+    ],
+    file: "/files/Maqolalar/Shaxs psixologik barqarorligini ta.docx",
+  },
+  {
+    id: 20,
+    title:
+      "Improving writing productivity of english philology students in higher education",
+    authors: "Jalilova Umida Abdusalimovna",
+    category: "pedagogy",
+    year: "2026",
+    abstract:
+      "The article examines strategies for improving writing productivity of English philology students in higher education. Effective approaches to academic writing instruction are analyzed.",
+    pages: "167-170",
+    publishDate: "19.01.2026",
+    views: 144,
+    likes: 7,
+    downloads: 110,
+    language: "English",
+    keywords: [
+      "writing productivity",
+      "English philology",
+      "higher education",
+      "academic writing",
+    ],
+    file: "/files/Maqolalar/Umida Jalilova.docx",
+  },
+  {
+    id: 21,
+    title:
+      "Internet reklama tili: ingliz va o'zbek tillarida derivatsiya jarayonining qiyosiy tahlili",
+    authors: "Qahhorova Guliston Abdug'affor qizi",
+    category: "linguistics",
+    year: "2026",
+    abstract:
+      "Maqolada internet reklama tilida ingliz va o'zbek tillarida derivatsiya jarayonining qiyosiy tahlili amalga oshirilgan. So'z yasalish qonuniyatlari va reklama tili xususiyatlari ko'rib chiqilgan.",
+    pages: "171-185",
+    publishDate: "19.01.2026",
+    views: 121,
+    likes: 5,
+    downloads: 88,
+    language: "O'zbek",
+    keywords: [
+      "internet reklama",
+      "derivatsiya",
+      "qiyosiy tahlil",
+      "ingliz tili",
+      "o'zbek tili",
+    ],
+    file: "/files/Maqolalar/Qahhorova Guliston Abdug'affor qizi New (2).docx",
+  },
+  {
+    id: 22,
+    title:
+      "Организация навоийского областного государственного архива и классификация фондов",
+    authors: "Iskandarova Shoxsanam Isoyevna",
+    category: "history",
+    year: "2026",
+    abstract:
+      "В статье рассматривается организация Навоийского областного государственного архива и классификация архивных фондов. Анализируется структура и принципы систематизации документов.",
+    pages: "186-198",
+    publishDate: "19.01.2026",
+    views: 109,
+    likes: 3,
+    downloads: 76,
+    language: "Русский",
+    keywords: [
+      "архив",
+      "Навоийская область",
+      "классификация фондов",
+      "документы",
+    ],
+    file: "/files/Maqolalar/Shohsanam Isoyevna.docx",
+  },
+  {
+    id: 23,
+    title:
+      "Talabalarda torenantlik xususiyatlarini shakllantirishning ilmiy-nazariy asoslari",
+    authors: "Toshtemirova Bahora Alisher qizi",
+    category: "psychology",
+    year: "2026",
+    abstract:
+      "Maqolada talabalarda tolerantlik xususiyatlarini shakllantirishning ilmiy-nazariy asoslari ko'rib chiqilgan. Tolerantlik tushunchasi va uni rivojlantirish yo'llari tahlil qilingan.",
+    pages: "199-207",
+    publishDate: "19.01.2026",
+    views: 138,
+    likes: 7,
+    downloads: 103,
+    language: "O'zbek",
+    keywords: [
+      "tolerantlik",
+      "talabalar",
+      "ilmiy-nazariy asos",
+      "shaxs shakllantirish",
+    ],
+    file: "/files/Maqolalar/Toshtemirova Bahora Alisher qizi.docx",
+  },
+  {
+    id: 24,
+    title:
+      "Navoiy g'azallarida badiiyat, badiiy san'atlardan foydalanish mahorati",
+    authors: "Shirinova Xursheda Sharifovna",
+    category: "literature",
+    year: "2026",
+    abstract:
+      "Maqolada Alisher Navoiy g'azallarida badiiyat va badiiy san'atlardan foydalanish mahorati tadqiq qilingan. Navoiy she'riyatidagi obrazlilik va uslubiy xususiyatlar tahlil qilingan.",
+    pages: "208-213",
+    publishDate: "19.01.2026",
+    views: 115,
+    likes: 4,
+    downloads: 82,
+    language: "O'zbek",
+    keywords: [
+      "Navoiy",
+      "g'azal",
+      "badiiyat",
+      "badiiy san'atlar",
+      "she'riyat",
+    ],
+    file: "/files/Maqolalar/Maqola Shirinova(2).docx",
+  },
+  {
+    id: 25,
+    title:
+      "Солнце как экзистенциальный символ в лирике Константин бальмонт",
+    authors: "Fazliddinov Shuxrat Faxriddinovich",
+    category: "literature",
+    year: "2026",
+    abstract:
+      "В статье рассматривается солнце как экзистенциальный символ в лирике Константина Бальмонта. Анализируется символическое значение солнечных образов в поэтическом творчестве.",
+    pages: "214-218",
+    publishDate: "19.01.2026",
+    views: 122,
+    likes: 5,
+    downloads: 89,
+    language: "Русский",
+    keywords: [
+      "Бальмонт",
+      "символизм",
+      "солнце",
+      "лирика",
+      "экзистенциализм",
+    ],
+    file: "/files/Maqolalar/Shuxrat Fazliddinov.docx",
+  },
+  {
+    id: 26,
+    title: "So'nggi amirning vasiyati",
+    authors: "Mahmud Hamrayev",
+    category: "literature",
+    year: "2026",
+    abstract:
+      "Maqolada so'nggi amirning vasiyati mavzusi badiiy jihatdan tahlil qilingan. Tarixiy voqealar va ularning adabiy talqini ko'rib chiqilgan.",
+    pages: "219-226",
+    publishDate: "19.01.2026",
+    views: 118,
+    likes: 4,
+    downloads: 85,
+    language: "O'zbek",
+    keywords: ["amir", "vasiyat", "tarix", "adabiyot"],
+    file: "/files/Maqolalar/M.Hamrayev maqola.doc",
+  },
+  {
+    id: 27,
+    title:
+      "Sport o'yinlari asosida jismoniy sifatlarni rivojlantirish metodikasi",
+    authors: "Oblayev Shaxzodbek Shamsiddin o'g'li",
+    category: "sports",
+    year: "2026",
+    abstract:
+      "Maqolada sport o'yinlari asosida jismoniy sifatlarni rivojlantirish metodikasi ko'rib chiqilgan. Turli sport o'yinlarining jismoniy tayyorgarlikka ta'siri tahlil qilingan.",
+    pages: "227-233",
+    publishDate: "19.01.2026",
+    views: 131,
+    likes: 6,
+    downloads: 97,
+    language: "O'zbek",
+    keywords: [
+      "sport o'yinlari",
+      "jismoniy sifatlar",
+      "metodika",
+      "jismoniy tarbiya",
+    ],
+    file: "/files/Maqolalar/Oblayev Shaxzod.docx",
+  },
+  {
+    id: 28,
+    title:
+      "Mikrokoopdinatsiya mashqlarining yengil atletikadagi samaradorligi",
+    authors: "Abdullayeva Shahlo Asqar qizi",
+    category: "sports",
+    year: "2026",
+    abstract:
+      "Maqolada mikrokoordinatsiya mashqlarining yengil atletikadagi samaradorligi tadqiq qilingan. Mashqlarning sportchilar natijalariga ta'siri eksperimental usulda baholangan.",
+    pages: "234-240",
+    publishDate: "19.01.2026",
+    views: 126,
+    likes: 5,
+    downloads: 92,
+    language: "O'zbek",
+    keywords: [
+      "mikrokoordinatsiya",
+      "yengil atletika",
+      "mashqlar",
+      "samaradorlik",
+    ],
+    file: "/files/Maqolalar/Абдуллаева.docx",
+  },
+];
+
+// Keyinchalik API dan olish uchun tayyor funksiyalar
+// Ready-made functions for future API integration
+
+export function getArticles() {
+  // TODO: Replace with API call: return axios.get('/api/articles')
+  return Promise.resolve([...articles]);
+}
+
+export function getArticleById(id) {
+  // TODO: Replace with API call: return axios.get(`/api/articles/${id}`)
+  const article = articles.find((a) => a.id === Number(id));
+  return Promise.resolve(article || null);
+}
+
+export function getArticlesByCategory(category) {
+  if (!category) return getArticles();
+  return Promise.resolve(articles.filter((a) => a.category === category));
+}
+
+export function getFeaturedArticles(count = 4) {
+  // TODO: Replace with API call: return axios.get('/api/articles/featured')
+  return Promise.resolve(
+    [...articles].sort((a, b) => b.views - a.views).slice(0, count)
+  );
+}
+
+export function getRelatedArticles(articleId, count = 3) {
+  const article = articles.find((a) => a.id === Number(articleId));
+  if (!article) return Promise.resolve([]);
+  return Promise.resolve(
+    articles
+      .filter((a) => a.id !== article.id && a.category === article.category)
+      .slice(0, count)
+  );
+}
