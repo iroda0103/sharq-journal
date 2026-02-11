@@ -16,11 +16,11 @@
 
 <script setup>
 const socialLinks = [
-  { name: "Facebook", icon: "mdi-facebook", url: "https://facebook.com" },
-  { name: "Instagram", icon: "mdi-instagram", url: "https://instagram.com" },
-  { name: "Telegram", icon: "mdi-telegram", url: "https://t.me" },
-  { name: "YouTube", icon: "mdi-youtube", url: "https://youtube.com" },
-  { name: "LinkedIn", icon: "mdi-linkedin", url: "https://linkedin.com" },
+  { name: "Facebook", icon: "mdi-facebook", url: "https://www.facebook.com/sharquniversiteti" },
+  { name: "Instagram", icon: "mdi-instagram", url: "https://www.instagram.com/sharquniversiteti" },
+  { name: "Telegram", icon: "mdi-telegram", url: "https://t.me/sharquniversiteti" },
+  { name: "YouTube", icon: "mdi-youtube", url: "https://www.youtube.com/@sharquniversiteti" },
+  { name: "LinkedIn", icon: "mdi-linkedin", url: "https://linkedin.com/in/sharquniversiteti" },
 ];
 </script>
 

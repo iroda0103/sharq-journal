@@ -82,17 +82,19 @@
             <div class="guideline-block mb-0">
               <v-alert type="info" variant="tonal" density="compact">
                 <div class="d-flex align-center">
-                  <v-icon class="mr-3">mdi-download</v-icon>
-                  <span>{{ t('submit.guidelines.template') }}</span>
-                  <v-spacer />
-                  <v-btn
+                   <span
                     size="small"
-                    color="#1b4b8a"
                     variant="text"
                     @click="downloadTemplate"
+                    class="d-flex align-center cursor-pointer"
                   >
-                    {{ t('submit.downloadTemplate') }}
-                  </v-btn>
+                    <!-- {{ t('submit.downloadTemplate') }} -->
+                      <v-icon class="mr-3">mdi-download</v-icon>
+                  </span>
+                  
+                  <span>{{ t('submit.guidelines.template') }}</span>
+                  <v-spacer />
+                 
                 </div>
               </v-alert>
             </div>
@@ -449,8 +451,10 @@ const resetForm = () => {
 };
 
 const downloadTemplate = () => {
-  // Download template logic
-  console.log("Downloading template...");
+  const link = document.createElement('a');
+  link.href = '/files/Замонавий_иқтисодиёт_ва_интеллектуал_технологиялар_журналига_қўйиладиган.docx';
+  link.download = 'Замонавий_иқтисодиёт_ва_интеллектуал_технологиялар_журналига_қўйиладиган.docx';
+  link.click();
 };
 </script>
 

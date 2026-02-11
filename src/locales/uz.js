@@ -1,7 +1,7 @@
 export default {
   nav: {
     home: "Bosh sahifa",
-    publications: "Nashrlar",
+    publications: "Arxiv",
     articles: "Maqolalar",
     editorial: "Tahririyat",
     submit: "Maqola topshirish",
@@ -9,7 +9,7 @@ export default {
     search: "Qidirish...",
   },
   home: {
-    title: "Zamonaviy iqtisodiyot va intellectual texnologiyalar",
+    title: "Zamonaviy iqtisodiyot va intellektual texnologiyalar",
     subtitle:
       "Zamonaviy tadqiqotlar va innovatsion g'oyalarni tarqatish platformasi",
     viewArticles: "Maqolalarni ko'rish",
@@ -197,15 +197,15 @@ export default {
     publisher: "Nashriyot",
     publisherValue: "Sharq Universiteti",
     publisherAddress: "Manzil",
-    publisherAddressValue: "Navoiy viloyati, O'zbekiston",
-    founder: "Ta'sischi",
+    publisherAddressValue: "Navoiy shahar, Navoiy ko'chasi, 32-b uy",
+    founder: "Muassis",
     founderValue: "Sharq Universiteti",
     languages: "Tillar",
     languagesValue: "O'zbek, Rus, Ingliz",
     yearEstablished: "Ta'sis etilgan yil",
     yearEstablishedValue: "2025",
     periodicity: "Davriylik",
-    periodicityValue: "Oylik",
+    periodicityValue: "Har chorakda",
     specialization: "Ixtisoslik",
     specializationValue: "Iqtisodiyot, raqamli iqtisodiyot, intellektual texnologiyalar, innovatsiyalar, pedagogika, tilshunoslik, tarix, falsafa",
     medium: "Nashr turi",

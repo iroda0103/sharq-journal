@@ -14,7 +14,7 @@
 <script setup>
 const contacts = [
   { icon: "mdi-map-marker", text: "Navoiy viloyati, O'zbekiston" },
-  { icon: "mdi-phone", text: "+998 (90) 123-45-67" },
+  { icon: "mdi-phone", text: "+998 (79) 222-07-00" },
   { icon: "mdi-email", text: "journal@sharqedu.uz" },
   { icon: "mdi-web", text: "www.sharqedu.uz" },
 ];

@@ -1,7 +1,7 @@
 export default {
   nav: {
     home: "Home",
-    publications: "Publications",
+    publications: "Archive",
     articles: "Articles",
     editorial: "Editorial Board",
     submit: "Submit Article",
@@ -196,7 +196,7 @@ export default {
     publisher: "Publisher",
     publisherValue: "Sharq University",
     publisherAddress: "Address",
-    publisherAddressValue: "Navoiy region, Uzbekistan",
+    publisherAddressValue: "Navoi city, Navoi street, house 32-b",
     founder: "Founder",
     founderValue: "Sharq University",
     languages: "Languages",
@@ -204,7 +204,7 @@ export default {
     yearEstablished: "Year Established",
     yearEstablishedValue: "2025",
     periodicity: "Periodicity",
-    periodicityValue: "Monthly",
+    periodicityValue: "Quarterly",
     specialization: "Specialization",
     specializationValue: "Economics, digital economy, intellectual technologies, innovations, pedagogy, linguistics, history, philosophy",
     medium: "Medium",

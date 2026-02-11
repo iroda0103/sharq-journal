@@ -120,7 +120,7 @@
           </div>
           <div class="contact-item">
             <v-icon size="small" color="primary">mdi-phone</v-icon>
-            <span>+998 (90) 123-45-67</span>
+            <span>+998 (79) 222-07-00</span>
           </div>
         </div>
       </v-card-text>
