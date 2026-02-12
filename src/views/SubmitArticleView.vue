@@ -452,7 +452,7 @@ const resetForm = () => {
 
 const downloadTemplate = () => {
   const link = document.createElement('a');
-  link.href = '/files/Замонавий_иқтисодиёт_ва_интеллектуал_технологиялар_журналига_қўйиладиган.docx';
+  link.href = '/files/Замонавий_иқтисодиёт_ва_интеллектуал_технологиялар_журналига_қўйиладиган.pdf';
   link.download = 'Замонавий_иқтисодиёт_ва_интеллектуал_технологиялар_журналига_қўйиладиган.pdf';
   link.click();
 };
