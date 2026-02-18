@@ -1,9 +1,24 @@
 // Maqolalar ma'lumotlari - keyinchalik backenddan olinadi
 // Article data - will be fetched from backend later
 
+// Jurnal konfiguratsiyasi - Crossref va SEO uchun
+export const journalConfig = {
+  title: "Sharq Universiteti Jurnali",
+  titleEn: "Journal of Sharq University",
+  abbreviation: "J. Sharq Univ.",
+  publisher: "Sharq Universiteti",
+  issn: "3093-9062",
+  doiPrefix: "", // Crossref dan olingandan keyin qo'shiladi, masalan: "10.12345"
+  siteUrl: "https://journal.sharquniversity.uz", // Sayt domeni - deploy qilinganda o'zgartiring
+};
+
 export const articles = [
   {
     id: 1,
+    slug: "labor-market-development-trends-prospects-and-role-in-the-field-of-pensions",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title: "Labor market development trends, prospects and role in the field of pensions",
     authors: "O'roqov Mamurali Odil o'g'li",
     category: "economics",
@@ -26,6 +41,10 @@ export const articles = [
   },
   {
     id: 2,
+    slug: "opyt-smi-navoiyskoy-oblasti-v-osveshchenii-sotsialno-ekonomicheskikh-protsessov",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Опыт сми навоийской области в освещении социально-экономических процессов",
     authors: "Azizbek Ruzimurodov Shonazarovich",
@@ -44,6 +63,10 @@ export const articles = [
   },
   {
     id: 3,
+    slug: "qishloq-xojaligida-risklarni-boshqarish-turlari-va-tasir-etuvchi-omillar",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Qishloq xo'jaligida risklarni boshqarish: turlari va ta'sir etuvchi omillar",
     authors: "Xamrokulov Sindor Qahramonovich",
@@ -67,6 +90,10 @@ export const articles = [
   },
   {
     id: 4,
+    slug: "navoiy-viloyatida-yengil-va-oziq-ovqat-sanoatining-mustaqillik-yillaridagi",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Navoiy viloyatida yengil va oziq-ovqat sanoatining mustaqillik yillaridagi rivojlanishi",
     authors: "Xoliqulov Shuxratjon",
@@ -90,6 +117,10 @@ export const articles = [
   },
   {
     id: 5,
+    slug: "ozbekistonda-soliq-siyosatidagi-ozgarishlar-va-ularning-iqtisodiyotga-tasiri",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Ўзбекистонда солиқ сиёсатидаги ўзгаришлар ва уларнинг иқтисодиётга таъсири",
     authors: "Axmedova Dilnoza Muzaffarovna",
@@ -108,6 +139,10 @@ export const articles = [
   },
   {
     id: 6,
+    slug: "karyeralar-bortlarining-turgunligini-baholashda-sonli-usullarni-kompleks-qollash",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Karyeralar bortlarining turg'unligini baholashda sonli usullarni kompleks qo'llash",
     authors: "Norov G'ulomjon Mirzog'olib o'g'li",
@@ -131,6 +166,10 @@ export const articles = [
   },
   {
     id: 7,
+    slug: "yopishqoqlikni-oshiruvchi-reagent-tasirida-sanoat-suspensiyasining-oquvchanlik",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Yopishqoqlikni oshiruvchi reagent ta'sirida sanoat suspensiyasining oquvchanlik xususiyatlarini eksperimental va sonli tahlili",
     authors: "Ahmadov Ilhom Aktam o'g'li",
@@ -154,6 +193,10 @@ export const articles = [
   },
   {
     id: 8,
+    slug: "pedagogical-and-psychological-foundations-of-ai-based-methodological-training",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Pedagogical and psychological foundations of ai-based methodological training for future primary school teachers",
     authors: "Najmiddinova Gulnora Najmiddin qizi",
@@ -177,6 +220,10 @@ export const articles = [
   },
   {
     id: 9,
+    slug: "oliy-talim-tizimida-loyiha-boshqaruvining-raqamli-transformatsiyasi",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Oliy ta'lim tizimida loyiha boshqaruvining raqamli transformatsiyasi va boshqaruvda xolislikni ta'minlash",
     authors: "Yodgorova Nafisa Baxriddinovnа",
@@ -200,6 +247,10 @@ export const articles = [
   },
   {
     id: 10,
+    slug: "integrating-digital-technologies-into-english-language-instruction",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Integrating digital technologies into english language instruction: a case of secondary education",
     authors: "Barno Raxmatullaeva",
@@ -223,6 +274,10 @@ export const articles = [
   },
   {
     id: 11,
+    slug: "the-role-of-technology-in-second-language-acquisition",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title: "The role of technology in second language acquisition",
     authors: "Fariza Ergasheva O'lmas qizi",
     category: "linguistics",
@@ -244,6 +299,10 @@ export const articles = [
   },
   {
     id: 12,
+    slug: "derivational-and-semantic-principles-of-ecological-terminology-in-uzbek-and-english",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Derivational and semantic principles of ecological terminology in uzbek and English",
     authors: "Ruziyeva Muhayyo Baxtiyor qizi",
@@ -268,6 +327,10 @@ export const articles = [
   },
   {
     id: 13,
+    slug: "the-use-of-multimedia-tools-in-developing-oral-speech-skills",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "The use of multimedia tools in developing oral speech skills in the educational process",
     authors: "Sayidova Moxichexra Islomovna",
@@ -291,6 +354,10 @@ export const articles = [
   },
   {
     id: 14,
+    slug: "institutsional-yondashuv-asosida-bolajak-pedagoglarda-kasbiy-madaniyatni",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Institutsional yondashuv asosida bo'lajak pedagoglarda kasbiy madaniyatni shakllantirish",
     authors: "Hamroyev Murodullo Nemat o'g'li",
@@ -314,6 +381,10 @@ export const articles = [
   },
   {
     id: 15,
+    slug: "utilizing-multimodal-pedagogy-combining-visual-spatial-gestural-audio",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Utilizing multimodal pedagogy: combining visual, spatial, gestural, audio, and linguistic modes",
     authors: "Madina Muzaffarova Umid qizi",
@@ -337,6 +408,10 @@ export const articles = [
   },
   {
     id: 16,
+    slug: "yoshlar-emotsional-intellekti-va-ijtimoiy-muloqot-konikmalari",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Yoshlar emotsional intellekti va ijtimoiy muloqot ko'nikmalari o'rtasidagi bog'liqlik",
     authors: "Qodirova Aziza Kamolovna",
@@ -360,6 +435,10 @@ export const articles = [
   },
   {
     id: 17,
+    slug: "sotsiolingvistik-metod-va-metodlar-masalasi",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title: "Sotsiolingvistik metod va metodlar masalasi",
     authors: "Safoyeva Shodiya Ma'ruf qizi",
     category: "linguistics",
@@ -382,6 +461,10 @@ export const articles = [
   },
   {
     id: 18,
+    slug: "talabalarda-til-organish-motivatsiyasini-shakllantirishning-ilmiy-asoslari",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Talabalarda til o'rganish motivatsiyasini shakllantirishning ilmiy asoslari",
     authors: "Shavqieva Sabina Asqarali qizi",
@@ -405,6 +488,10 @@ export const articles = [
   },
   {
     id: 19,
+    slug: "shaxs-psixologik-barqarorligini-taminlashda-himoya-mexanizmlarining",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Shaxs psixologik barqarorligini ta'minlashda himoya mexanizmlarining funksional xususiyatlari",
     authors: "Nasulloyeva Shahnoza Ilhom qizi",
@@ -428,6 +515,10 @@ export const articles = [
   },
   {
     id: 20,
+    slug: "improving-writing-productivity-of-english-philology-students-in-higher-education",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Improving writing productivity of english philology students in higher education",
     authors: "Jalilova Umida Abdusalimovna",
@@ -451,6 +542,10 @@ export const articles = [
   },
   {
     id: 21,
+    slug: "internet-reklama-tili-ingliz-va-ozbek-tillarida-derivatsiya-jarayonining",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Internet reklama tili: ingliz va o'zbek tillarida derivatsiya jarayonining qiyosiy tahlili",
     authors: "Qahhorova Guliston Abdug'affor qizi",
@@ -475,6 +570,10 @@ export const articles = [
   },
   {
     id: 22,
+    slug: "organizatsiya-navoiyskogo-oblastnogo-gosudarstvennogo-arkhiva",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Организация навоийского областного государственного архива и классификация фондов",
     authors: "Iskandarova Shoxsanam Isoyevna",
@@ -498,6 +597,10 @@ export const articles = [
   },
   {
     id: 23,
+    slug: "talabalarda-tolerantlik-xususiyatlarini-shakllantirishning-ilmiy-nazariy-asoslari",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Talabalarda torenantlik xususiyatlarini shakllantirishning ilmiy-nazariy asoslari",
     authors: "Toshtemirova Bahora Alisher qizi",
@@ -521,6 +624,10 @@ export const articles = [
   },
   {
     id: 24,
+    slug: "navoiy-gazallarida-badiiyat-badiiy-sanatlardan-foydalanish-mahorati",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Navoiy g'azallarida badiiyat, badiiy san'atlardan foydalanish mahorati",
     authors: "Shirinova Xursheda Sharifovna",
@@ -545,6 +652,10 @@ export const articles = [
   },
   {
     id: 25,
+    slug: "solntse-kak-ekzistentsialnyy-simvol-v-lirike-konstantin-balmont",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Солнце как экзистенциальный символ в лирике Константин бальмонт",
     authors: "Fazliddinov Shuxrat Faxriddinovich",
@@ -569,6 +680,10 @@ export const articles = [
   },
   {
     id: 26,
+    slug: "songgi-amirning-vasiyati",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title: "So'nggi amirning vasiyati",
     authors: "Mahmud Hamrayev",
     category: "literature",
@@ -586,6 +701,10 @@ export const articles = [
   },
   {
     id: 27,
+    slug: "sport-oyinlari-asosida-jismoniy-sifatlarni-rivojlantirish-metodikasi",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Sport o'yinlari asosida jismoniy sifatlarni rivojlantirish metodikasi",
     authors: "Oblayev Shaxzodbek Shamsiddin o'g'li",
@@ -609,6 +728,10 @@ export const articles = [
   },
   {
     id: 28,
+    slug: "mikrokoordinatsiya-mashqlarining-yengil-atletikadagi-samaradorligi",
+    doi: "",
+    volume: 1,
+    issue: 1,
     title:
       "Mikrokoopdinatsiya mashqlarining yengil atletikadagi samaradorligi",
     authors: "Abdullayeva Shahlo Asqar qizi",
@@ -643,6 +766,12 @@ export function getArticles() {
 export function getArticleById(id) {
   // TODO: Replace with API call: return axios.get(`/api/articles/${id}`)
   const article = articles.find((a) => a.id === Number(id));
+  return Promise.resolve(article || null);
+}
+
+export function getArticleBySlug(slug) {
+  // TODO: Replace with API call: return axios.get(`/api/articles/slug/${slug}`)
+  const article = articles.find((a) => a.slug === slug);
   return Promise.resolve(article || null);
 }
 

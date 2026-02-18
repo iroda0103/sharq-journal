@@ -48,7 +48,7 @@
                     </v-chip>
                   </div>
 
-                  <h2 class="article-title" @click="goToArticle(article.id)">
+                  <h2 class="article-title" @click="goToArticle(article.slug)">
                     {{ article.title }}
                   </h2>
 
@@ -90,7 +90,7 @@
                         variant="outlined"
                         color="primary"
                         icon="mdi-arrow-right"
-                        @click="goToArticle(article.id)"
+                        @click="goToArticle(article.slug)"
                       />
                     </div>
                   </div>
@@ -242,8 +242,8 @@ const paginatedArticles = computed(() => {
   return filteredArticles.value.slice(start, start + perPage);
 });
 
-const goToArticle = (id) => {
-  router.push(`/maqola/${id}`);
+const goToArticle = (slug) => {
+  router.push(`/maqola/${slug}`);
 };
 
 const handleSearch = (query) => {

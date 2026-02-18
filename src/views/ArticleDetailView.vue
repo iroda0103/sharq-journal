@@ -240,8 +240,8 @@ const downloadArticle = () => {
   console.log("Downloading article...");
 };
 
-const goToArticle = (id) => {
-  router.push(`/maqola/${id}`);
+const goToArticle = (slug) => {
+  router.push(`/maqola/${slug}`);
 };
 
 onMounted(() => {

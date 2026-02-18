@@ -14,8 +14,7 @@ export const publications = [
     downloads: 10,
     cover: "/img/journal_bg.jpg",
     file: "/files/Jurnal.pdf",
-    issn: "",
-    // issn: "2181-4430",
+    issn: "3093-9062",
   },
 ];
 

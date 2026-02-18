@@ -61,7 +61,7 @@ const props = defineProps({
 const router = useRouter();
 
 const goToArticle = () => {
-  router.push(`/maqola/${props.article.id}`);
+  router.push(`/maqola/${props.article.slug}`);
 };
 </script>
 

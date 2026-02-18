@@ -128,6 +128,18 @@
                     {{ t('articleDetail.info') }}
                   </h3>
                   <div class="info-items">
+                    <div class="info-item" v-if="article.doi">
+                      <span class="info-label">DOI</span>
+                      <a :href="`https://doi.org/${article.doi}`" target="_blank" class="info-value doi-link">{{ article.doi }}</a>
+                    </div>
+                    <div class="info-item">
+                      <span class="info-label">ISSN</span>
+                      <span class="info-value">{{ journalConfig.issn }}</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="info-label">Volume / Issue</span>
+                      <span class="info-value">Vol. {{ article.volume }}, No. {{ article.issue }}</span>
+                    </div>
                     <div class="info-item">
                       <span class="info-label">{{ t('articleDetail.pagesLabel') }}</span>
                       <span class="info-value">{{ article.pages }}</span>
@@ -180,7 +192,7 @@
                       v-for="related in relatedArticles"
                       :key="related.id"
                       class="related-item"
-                      @click="goToArticle(related.id)"
+                      @click="goToArticle(related.slug)"
                     >
                       <h4 class="related-title">{{ related.title }}</h4>
                       <p class="related-authors">{{ related.authors }}</p>
@@ -201,7 +213,7 @@ import { ref, onMounted, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import PageHeader from "@/components/PageHeader.vue";
-import { getArticleById, getRelatedArticles } from "@/data/articles.js";
+import { getArticleBySlug, getRelatedArticles, journalConfig } from "@/data/articles.js";
 
 const route = useRoute();
 const router = useRouter();
@@ -224,24 +236,108 @@ const article = ref({
 
 const relatedArticles = ref([]);
 
-const loadArticle = async (id) => {
-  const data = await getArticleById(id);
+const setMeta = (attr, key, content) => {
+  if (!content) return;
+  let el = document.querySelector(`meta[${attr}="${key}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+};
+
+const updateMetaTags = (data) => {
+  document.title = `${data.title} | ${journalConfig.title}`;
+  const pageUrl = window.location.href;
+  const [firstPage, lastPage] = (data.pages || '').split('-');
+
+  // Asosiy SEO meta taglar
+  setMeta('name', 'description', data.abstract);
+  setMeta('name', 'keywords', (data.keywords || []).join(', '));
+  setMeta('name', 'author', data.authors);
+
+  // Open Graph
+  setMeta('property', 'og:title', data.title);
+  setMeta('property', 'og:description', data.abstract);
+  setMeta('property', 'og:type', 'article');
+  setMeta('property', 'og:url', pageUrl);
+
+  // Google Scholar / Crossref citation meta taglar
+  setMeta('name', 'citation_title', data.title);
+  setMeta('name', 'citation_author', data.authors);
+  setMeta('name', 'citation_publication_date', data.publishDate);
+  setMeta('name', 'citation_journal_title', journalConfig.title);
+  setMeta('name', 'citation_issn', journalConfig.issn);
+  setMeta('name', 'citation_volume', String(data.volume || ''));
+  setMeta('name', 'citation_issue', String(data.issue || ''));
+  setMeta('name', 'citation_firstpage', firstPage);
+  setMeta('name', 'citation_lastpage', lastPage);
+  setMeta('name', 'citation_language', data.language);
+  if (data.doi) {
+    setMeta('name', 'citation_doi', data.doi);
+  }
+  if (data.file) {
+    setMeta('name', 'citation_pdf_url', `${journalConfig.siteUrl}${data.file}`);
+  }
+
+  // JSON-LD Structured Data (Schema.org) - Google uchun
+  let jsonLd = document.querySelector('script[data-article-jsonld]');
+  if (!jsonLd) {
+    jsonLd = document.createElement('script');
+    jsonLd.type = 'application/ld+json';
+    jsonLd.setAttribute('data-article-jsonld', 'true');
+    document.head.appendChild(jsonLd);
+  }
+  jsonLd.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": data.title,
+    "author": { "@type": "Person", "name": data.authors },
+    "datePublished": data.publishDate,
+    "description": data.abstract,
+    "keywords": (data.keywords || []).join(', '),
+    "inLanguage": data.language,
+    "pageStart": firstPage,
+    "pageEnd": lastPage,
+    "isPartOf": {
+      "@type": "PublicationIssue",
+      "issueNumber": data.issue,
+      "isPartOf": {
+        "@type": "PublicationVolume",
+        "volumeNumber": data.volume,
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": journalConfig.title,
+          "issn": journalConfig.issn,
+          "publisher": { "@type": "Organization", "name": journalConfig.publisher }
+        }
+      }
+    },
+    "url": pageUrl,
+    ...(data.doi ? { "identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": data.doi } } : {})
+  });
+};
+
+const loadArticle = async (slug) => {
+  const data = await getArticleBySlug(slug);
   if (data) {
     article.value = data;
-    relatedArticles.value = await getRelatedArticles(id);
+    updateMetaTags(data);
+    relatedArticles.value = await getRelatedArticles(data.id);
   }
 };
 
-const goToArticle = (id) => {
-  router.push(`/maqola/${id}`);
+const goToArticle = (slug) => {
+  router.push(`/maqola/${slug}`);
 };
 
 onMounted(() => {
-  loadArticle(route.params.id);
+  loadArticle(route.params.slug);
 });
 
-watch(() => route.params.id, (newId) => {
-  if (newId) loadArticle(newId);
+watch(() => route.params.slug, (newSlug) => {
+  if (newSlug) loadArticle(newSlug);
 });
 </script>
 
@@ -409,6 +505,16 @@ watch(() => route.params.id, (newId) => {
 .info-value {
   font-weight: 700;
   color: rgb(var(--v-theme-on-surface));
+}
+
+.doi-link {
+  color: #1b4b8a;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.doi-link:hover {
+  text-decoration: underline;
 }
 
 

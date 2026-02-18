@@ -11,7 +11,7 @@
 
       <v-row class="ga-2  ">
         <v-col v-for="article in articles" :key="article.id" class="d-flex flex-grow-1 article-col">
-          <v-card class="featured-article-card w-100" @click="goToArticle(article.id)" elevation="2" hover>
+          <v-card class="featured-article-card w-100" @click="goToArticle(article.slug)" elevation="2" hover>
             <v-card-text class="pa-6">
               <v-chip color="primary" size="small" class="mb-4">
                 {{ t(`categories.${article.category}`) }}
@@ -41,7 +41,7 @@
                 </div>
 
                 <v-btn icon="mdi-arrow-right" variant="text" color="primary" size="small"
-                  @click.stop="goToArticle(article.id)"></v-btn>
+                  @click.stop="goToArticle(article.slug)"></v-btn>
               </div>
             </v-card-text>
           </v-card>
@@ -69,8 +69,8 @@ const replaceText = ((txt) => {
   return (txt.length < 130) ? txt : (txt.slice(0, 130) + '...')
 });
 
-const goToArticle = (id) => {
-  router.push(`/maqola/${id}`);
+const goToArticle = (slug) => {
+  router.push(`/maqola/${slug}`);
 };
 </script>
 <style scoped>

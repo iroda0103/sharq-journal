@@ -50,7 +50,8 @@ const routes = [
   component: () => import("../views/PublicationDetailView.vue")
 },
 {
-  path: '/maqola/:id',
+  path: '/maqola/:slug',
+  name: 'article-detail',
   component: () => import("../views/ArticleDetailView2.vue")
 }
 ];

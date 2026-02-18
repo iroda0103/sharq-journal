@@ -71,7 +71,7 @@
             v-for="article in popularArticles"
             :key="article.id"
             class="popular-item"
-            @click="$emit('article-click', article.id)"
+            @click="$emit('article-click', article.slug)"
           >
             <h4 class="popular-title">{{ article.title }}</h4>
             <div class="popular-meta">
