@@ -53,6 +53,11 @@ const routes = [
   path: '/maqola/:slug',
   name: 'article-detail',
   component: () => import("../views/ArticleDetailView2.vue")
+},
+{
+  path: '/:pathMatch(.*)*',
+  name: 'not-found',
+  component: () => import("../views/NotFoundView.vue")
 }
 ];
 

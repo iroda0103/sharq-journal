@@ -218,6 +218,15 @@ export default {
     downloadCertificate: "Скачать свидетельство",
     quickNav: "Быстрая навигация",
   },
+  notFound: {
+    pageTitle: "Страница не найдена",
+    title: "Извините, эта страница не найдена",
+    description: "Страница, которую вы ищете, не существует, была удалена или перемещена.",
+    goHome: "На главную",
+    goArticles: "К статьям",
+    articleNotFound: "Статья не найдена",
+    articleNotFoundDesc: "Статья, которую вы ищете, не существует или была удалена.",
+  },
   footer: {
     university: "Университет Шарк",
     description:

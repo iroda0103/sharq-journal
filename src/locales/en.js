@@ -217,6 +217,15 @@ export default {
     downloadCertificate: "Download Certificate",
     quickNav: "Quick Navigation",
   },
+  notFound: {
+    pageTitle: "Page Not Found",
+    title: "Sorry, this page was not found",
+    description: "The page you are looking for does not exist, has been removed, or may have been moved.",
+    goHome: "Go Home",
+    goArticles: "View Articles",
+    articleNotFound: "Article Not Found",
+    articleNotFoundDesc: "The article you are looking for does not exist or may have been removed.",
+  },
   footer: {
     university: "Sharq University",
     description:

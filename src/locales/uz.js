@@ -218,6 +218,15 @@ export default {
     downloadCertificate: "Guvohnomani yuklab olish",
     quickNav: "Tezkor havolalar",
   },
+  notFound: {
+    pageTitle: "Sahifa topilmadi",
+    title: "Kechirasiz, bu sahifa topilmadi",
+    description: "Siz qidirayotgan sahifa mavjud emas, o'chirilgan yoki ko'chirilgan bo'lishi mumkin.",
+    goHome: "Bosh sahifaga",
+    goArticles: "Maqolalarga",
+    articleNotFound: "Maqola topilmadi",
+    articleNotFoundDesc: "Siz qidirayotgan maqola mavjud emas yoki o'chirilgan bo'lishi mumkin.",
+  },
   footer: {
     university: "Sharq Universiteti",
     description:
