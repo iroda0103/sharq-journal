@@ -73,7 +73,7 @@
             class="popular-item"
             @click="$emit('article-click', article.slug)"
           >
-            <h4 class="popular-title">{{ article.title }}</h4>
+            <h4 class="popular-title">{{ getLocalized(article.title, lang) }}</h4>
             <div class="popular-meta">
               <v-icon size="x-small">mdi-eye</v-icon>
               <span>{{ article.views }}</span>
@@ -129,10 +129,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { getLocalized } from "@/data/articles.js";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+
+const lang = computed(() => {
+  const l = locale.value;
+  if (l === "ru") return "ru";
+  if (l === "en") return "en";
+  return "uz";
+});
 
 defineProps({
   showSearch: { type: Boolean, default: false },

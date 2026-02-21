@@ -17,14 +17,14 @@
                 {{ t(`categories.${article.category}`) }}
               </v-chip>
 
-              <h3 class="article-title mb-3">{{ article.title }}</h3>
+              <h3 class="article-title mb-3">{{ getLocalized(article.title, lang) }}</h3>
 
               <div class="article-authors mb-3">
                 <v-icon size="small" color="primary" class="mr-2">mdi-account</v-icon>
                 <span>{{ article.authors }}</span>
               </div>
 
-              <p class="article-abstract">{{ replaceText(article.abstract) }}</p>
+              <p class="article-abstract">{{ replaceText(getLocalized(article.abstract, lang)) }}</p>
 
               <v-divider class="my-4"></v-divider>
 
@@ -52,13 +52,20 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { getFeaturedArticles } from "@/data/articles.js";
+import { getFeaturedArticles, getLocalized } from "@/data/articles.js";
 
 const router = useRouter();
-const { t } = useI18n();
+const { t, locale } = useI18n();
+
+const lang = computed(() => {
+  const l = locale.value;
+  if (l === "ru") return "ru";
+  if (l === "en") return "en";
+  return "uz";
+});
 
 const articles = ref([]);
 
@@ -66,7 +73,8 @@ onMounted(async () => {
   articles.value = await getFeaturedArticles(4);
 });
 const replaceText = ((txt) => {
-  return (txt.length < 130) ? txt : (txt.slice(0, 130) + '...')
+  if (!txt || typeof txt !== 'string') return '';
+  return (txt.length < 130) ? txt : (txt.slice(0, 130) + '...');
 });
 
 const goToArticle = (slug) => {

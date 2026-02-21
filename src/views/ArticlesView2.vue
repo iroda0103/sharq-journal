@@ -49,7 +49,7 @@
                   </div>
 
                   <h2 class="article-title" @click="goToArticle(article.slug)">
-                    {{ article.title }}
+                    {{ getLocalized(article.title, lang) }}
                   </h2>
 
                   <p class="article-authors">
@@ -57,7 +57,7 @@
                     {{ article.authors }}
                   </p>
 
-                  <p class="article-abstract">{{ article.abstract }}</p>
+                  <p class="article-abstract">{{ getLocalized(article.abstract, lang) }}</p>
 
                   <div class="article-footer">
                     <div class="article-stats">
@@ -139,10 +139,17 @@ import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import PageHeader from "../components/PageHeader.vue";
 import PageSidebar from "@/components/PageSidebar.vue";
-import { getArticles } from "@/data/articles.js";
+import { getArticles, getLocalized } from "@/data/articles.js";
 
 const router = useRouter();
-const { t } = useI18n();
+const { t, locale } = useI18n();
+
+const lang = computed(() => {
+  const l = locale.value;
+  if (l === "ru") return "ru";
+  if (l === "en") return "en";
+  return "uz";
+});
 
 const selectedFilter = ref('all');
 const sortBy = ref('date');
@@ -196,7 +203,14 @@ const popularArticles = computed(() =>
 );
 
 const tags = computed(() => {
-  const allTags = allArticles.value.flatMap((a) => a.keywords || []);
+  const allTags = allArticles.value.flatMap((a) => {
+    const kw = a.keywords;
+    if (!kw || Array.isArray(kw)) return kw || [];
+    for (const l of [lang.value, 'uz', 'ru', 'en']) {
+      if (kw[l]?.length) return kw[l];
+    }
+    return [];
+  });
   return [...new Set(allTags)].slice(0, 10);
 });
 
@@ -215,9 +229,9 @@ const filteredArticles = computed(() => {
     const q = searchQuery.value.toLowerCase();
     result = result.filter(
       (a) =>
-        a.title.toLowerCase().includes(q) ||
+        getLocalized(a.title, lang.value).toLowerCase().includes(q) ||
         a.authors.toLowerCase().includes(q) ||
-        a.abstract.toLowerCase().includes(q)
+        getLocalized(a.abstract, lang.value).toLowerCase().includes(q)
     );
   }
 
@@ -230,7 +244,9 @@ const filteredArticles = computed(() => {
   if (sortBy.value === 'views') {
     result.sort((a, b) => b.views - a.views);
   } else if (sortBy.value === 'title') {
-    result.sort((a, b) => a.title.localeCompare(b.title));
+    result.sort((a, b) =>
+      getLocalized(a.title, lang.value).localeCompare(getLocalized(b.title, lang.value))
+    );
   }
 
   return result;

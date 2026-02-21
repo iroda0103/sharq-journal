@@ -7,14 +7,14 @@
         </v-chip>
       </div>
 
-      <h3 class="article-title">{{ article.title }}</h3>
+      <h3 class="article-title">{{ localizedTitle }}</h3>
 
       <div class="article-authors">
         <v-icon size="small" color="primary">mdi-account</v-icon>
         <span>{{ article.authors }}</span>
       </div>
 
-      <p class="article-abstract">{{ article.abstract }}</p>
+      <p class="article-abstract">{{ localizedAbstract }}</p>
 
       <div class="article-footer">
         <div class="article-stats">
@@ -34,7 +34,7 @@
 
         <div class="article-meta-tags">
           <v-chip
-            v-for="keyword in article.keywords.slice(0, 3)"
+            v-for="keyword in localizedKeywords.slice(0, 3)"
             :key="keyword"
             size="x-small"
             variant="outlined"
@@ -49,7 +49,10 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { useRouter } from "vue-router";
+import { useI18n } from "vue-i18n";
+import { getLocalized } from "@/data/articles.js";
 
 const props = defineProps({
   article: {
@@ -59,6 +62,25 @@ const props = defineProps({
 });
 
 const router = useRouter();
+const { locale } = useI18n();
+
+const lang = computed(() => {
+  const l = locale.value;
+  if (l === "ru") return "ru";
+  if (l === "en") return "en";
+  return "uz";
+});
+
+const localizedTitle    = computed(() => getLocalized(props.article.title,    lang.value));
+const localizedAbstract = computed(() => getLocalized(props.article.abstract, lang.value));
+const localizedKeywords = computed(() => {
+  const kw = props.article.keywords;
+  if (!kw || Array.isArray(kw)) return kw || [];
+  for (const l of [lang.value, 'uz', 'ru', 'en']) {
+    if (kw[l]?.length) return kw[l];
+  }
+  return [];
+});
 
 const goToArticle = () => {
   router.push(`/maqola/${props.article.slug}`);

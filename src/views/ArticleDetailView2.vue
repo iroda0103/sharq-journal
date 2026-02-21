@@ -37,7 +37,7 @@
     <!-- Normal Article View -->
     <template v-else>
     <PageHeader
-      :title="article.title"
+      :title="localizedTitle"
     />
 
     <!-- Article Content -->
@@ -94,7 +94,7 @@
                 <!-- Abstract -->
                 <div class="content-section">
                   <h2 class="section-heading">{{ t('articleDetail.abstract') }}</h2>
-                  <p class="section-text">{{ article.abstract }}</p>
+                  <p class="section-text">{{ localizedAbstract }}</p>
                 </div>
 
                 <!-- Keywords -->
@@ -102,7 +102,7 @@
                   <h2 class="section-heading">{{ t('articleDetail.keywords') }}</h2>
                   <div class="keywords-list">
                     <v-chip
-                      v-for="keyword in article.keywords"
+                      v-for="keyword in localizedKeywords"
                       :key="keyword"
                       size="small"
                       color="primary"
@@ -225,7 +225,7 @@
                       class="related-item"
                       @click="goToArticle(related.slug)"
                     >
-                      <h4 class="related-title">{{ related.title }}</h4>
+                      <h4 class="related-title">{{ getLocalized(related.title, lang) }}</h4>
                       <p class="related-authors">{{ related.authors }}</p>
                     </div>
                   </div>
@@ -241,15 +241,34 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import PageHeader from "@/components/PageHeader.vue";
-import { getArticleBySlug, getRelatedArticles, journalConfig } from "@/data/articles.js";
+import { getArticleBySlug, getRelatedArticles, journalConfig, getLocalized } from "@/data/articles.js";
 
 const route = useRoute();
 const router = useRouter();
-const { t } = useI18n();
+const { t, locale } = useI18n();
+
+// i18n locale → articles.js kalit (uz/ru/en)
+const lang = computed(() => {
+  const l = locale.value;
+  if (l === "ru") return "ru";
+  if (l === "en") return "en";
+  return "uz";
+});
+
+const localizedTitle    = computed(() => getLocalized(article.value.title,    lang.value));
+const localizedAbstract = computed(() => getLocalized(article.value.abstract, lang.value));
+const localizedKeywords = computed(() => {
+  const kw = article.value.keywords;
+  if (!kw || Array.isArray(kw)) return kw || [];
+  for (const l of [lang.value, 'uz', 'ru', 'en']) {
+    if (kw[l]?.length) return kw[l];
+  }
+  return [];
+});
 
 const articleNotFound = ref(false);
 
@@ -282,26 +301,35 @@ const setMeta = (attr, key, content) => {
 };
 
 const updateMetaTags = (data) => {
-  document.title = `${data.title} | ${journalConfig.title}`;
+  const resolvedTitle    = getLocalized(data.title,    lang.value);
+  const resolvedAbstract = getLocalized(data.abstract, lang.value);
+  const resolvedKeywords = (() => {
+    const kw = data.keywords;
+    if (!kw || Array.isArray(kw)) return kw || [];
+    return kw[lang.value] || kw.uz || kw.en || kw.ru || [];
+  })();
+  const journalTitle = getLocalized(journalConfig.title, lang.value);
+
+  document.title = `${resolvedTitle} | ${journalTitle}`;
   const pageUrl = window.location.href;
   const [firstPage, lastPage] = (data.pages || '').split('-');
 
   // Asosiy SEO meta taglar
-  setMeta('name', 'description', data.abstract);
-  setMeta('name', 'keywords', (data.keywords || []).join(', '));
+  setMeta('name', 'description', resolvedAbstract);
+  setMeta('name', 'keywords', resolvedKeywords.join(', '));
   setMeta('name', 'author', data.authors);
 
   // Open Graph
-  setMeta('property', 'og:title', data.title);
-  setMeta('property', 'og:description', data.abstract);
+  setMeta('property', 'og:title', resolvedTitle);
+  setMeta('property', 'og:description', resolvedAbstract);
   setMeta('property', 'og:type', 'article');
   setMeta('property', 'og:url', pageUrl);
 
   // Google Scholar / Crossref citation meta taglar
-  setMeta('name', 'citation_title', data.title);
+  setMeta('name', 'citation_title', resolvedTitle);
   setMeta('name', 'citation_author', data.authors);
   setMeta('name', 'citation_publication_date', data.publishDate);
-  setMeta('name', 'citation_journal_title', journalConfig.title);
+  setMeta('name', 'citation_journal_title', journalTitle);
   setMeta('name', 'citation_issn', journalConfig.issn);
   setMeta('name', 'citation_volume', String(data.volume || ''));
   setMeta('name', 'citation_issue', String(data.issue || ''));
@@ -326,11 +354,11 @@ const updateMetaTags = (data) => {
   jsonLd.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": data.title,
+    "headline": resolvedTitle,
     "author": { "@type": "Person", "name": data.authors },
     "datePublished": data.publishDate,
-    "description": data.abstract,
-    "keywords": (data.keywords || []).join(', '),
+    "description": resolvedAbstract,
+    "keywords": resolvedKeywords.join(', '),
     "inLanguage": data.language,
     "pageStart": firstPage,
     "pageEnd": lastPage,
@@ -342,7 +370,7 @@ const updateMetaTags = (data) => {
         "volumeNumber": data.volume,
         "isPartOf": {
           "@type": "Periodical",
-          "name": journalConfig.title,
+          "name": journalTitle,
           "issn": journalConfig.issn,
           "publisher": { "@type": "Organization", "name": journalConfig.publisher }
         }
