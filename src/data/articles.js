@@ -445,7 +445,7 @@
           ru: [],
           en: ["artificial intelligence", "teacher education", "methodological training", "pedagogical foundations", "psychological foundations", "pre-service primary teachers"],
         },
-        file: "",
+        file: "/files/Maqola pdf/Article Sharq.pdf",
       },
       {
         id: 9,
@@ -507,9 +507,59 @@ fаirness in mаnаgement prоcesses.`,
         category: "pedagogy",
         year: "2026",
         abstract: {
-          uz: "",
-          ru: "",
-          en: "The article explores the integration of digital technologies into English language instruction in secondary education. Modern methods and their effectiveness in language teaching are analyzed.",
+          uz: `Ushbu tadqiqotda umumiy o‘rta ta’lim tizimida ingliz tilini o‘qitish 
+jarayoniga raqamli texnologiyalarni integratsiya qilish samaradorligi o‘rganilgan. 
+Tadqiqotda raqamli vositalar va platformalarning o‘quvchilarning kommunikativ 
+kompetensiyasini rivojlantirish, ularning motivatsiyasini oshirish hamda umumiy til 
+bilimlarini mustahkamlashdagi o‘rni tahlil qilinadi. Tadqiqot jarayonida darslarni 
+kuzatish, kirish va yakuniy testlar, so‘rovnomalar hamda o‘qituvchilar va o‘quvchilar 
+bilan suhbatlardan iborat aralash tadqiqot metodologiyasi qo‘llanildi. Tajriba-sinov 
+jarayonida interaktiv platformalar, mobil ilovalar, multimediya materiallari va onlayn 
+baholash vositalaridan foydalanildi, nazorat guruhi esa an’anaviy o‘qitish usullari 
+asosida ta’lim oldi. Tadqiqot natijalari raqamli texnologiyalardan tizimli foydalanish 
+o‘quvchilarning tinglab tushunish, gapirish, o‘qish va yozish ko‘nikmalarini sezilarli 
+darajada yaxshilashini, shuningdek, ularning o‘qishga bo‘lgan qiziqishi va 
+mustaqilligini oshirishini ko‘rsatdi. Shuningdek, tadqiqotda raqamli ta’lim muhitida 
+o‘qituvchining roli o‘zgarib borayotgani hamda texnik infratuzilma va raqamli 
+savodxonlik bilan bog‘liq muammolar aniqlangan. Olingan natijalar ingliz tilini 
+o‘qitishda raqamli texnologiyalarni qo‘llash umumiy o‘rta ta’limda samarali, 
+o‘quvchiga yo‘naltirilgan va innovatsion ta’lim amaliyotlarini rivojlantirishga xizmat 
+qilishini tasdiqlaydi`,
+          ru: `В данном исследовании рассматривается эффективность 
+интеграции цифровых технологий в обучение английскому языку в системе 
+среднего образования. Основное внимание уделяется тому, каким образом 
+цифровые инструменты и платформы способствуют развитию коммуникативной 
+компетенции учащихся, повышению их мотивации и общего уровня языковой 
+подготовки. В исследовании применялся смешанный метод, включающий 
+наблюдения за учебным процессом, входное и итоговое тестирование, 
+анкетирование, а также интервью с учителями и учащимися. Экспериментальное 
+обучение предполагало использование цифровых ресурсов, таких как 
+интерактивные платформы, мобильные приложения, мультимедийные 
+материалы и онлайн-оценивание, в то время как контрольная группа обучалась 
+по традиционным методам. Результаты исследования показали, что 
+систематическое использование цифровых технологий значительно улучшает 
+навыки аудирования, говорения, чтения и письма учащихся, а также повышает 
+их учебную активность и самостоятельность. Кроме того, в работе отражена 
+трансформация роли учителя в условиях цифровой образовательной среды и 
+обозначены проблемы, связанные с технической инфраструктурой и уровнем 
+цифровой грамотности. Полученные результаты подтверждают, что интеграция 
+цифровых технологий в обучение английскому языку способствует 
+формированию более эффективной, ориентированной на учащихся и 
+инновационной образовательной практики в средней школе`,
+          en: `This study examines the effectiveness of integrating digital technologies into 
+English language instruction in secondary education. The research focuses on how 
+digital tools and platforms enhance students’ communicative competence, motivation, 
+and overall language proficiency. A mixed-methods approach was employed, 
+including classroom observations, pre- and post-tests, questionnaires, and interviews 
+with teachers and students. The experimental instruction incorporated digital resources 
+such as interactive platforms, mobile applications, multimedia materials, and online 
+assessments, while the control group followed traditional teaching methods. The 
+findings reveal that the systematic use of digital technologies significantly improves 
+learners’ listening, speaking, reading, and writing skills, as well as their engagement 
+and autonomy in learning. The study also highlights teachers’ evolving roles in 
+digitally enriched classrooms and identifies challenges related to technical 
+infrastructure and digital literacy. The results suggest that integrating digital 
+technologies into English language teaching contributes to more effective, studentcentered, and innovative instructional practices in secondary education.`,
         },
         pages: "89-98",
         publishDate: "19.01.2026",
@@ -518,9 +568,9 @@ fаirness in mаnаgement prоcesses.`,
         downloads: 120,
         language: "English",
         keywords: {
-          uz: [],
-          ru: [],
-          en: ["digital technologies", "English language", "secondary education", "instruction"],
+          uz: ["raqamli texnologiyalar", "ingliz tilini o‘qitish", "umumiy o‘rta ta’lim", "kommunikativ kompetensiya", "ta’limda AKT", "raqamli ta’lim vositalari"],
+          ru: ["цифровые технологии", "обучение английскому языку", "среднее образование", "коммуникативная компетенция", "ИКТ в образовании", "цифровые учебные инструменты"],
+          en: ["digital technologies", "English language instruction", "secondary education", "communicative competence", "ICT in education", "digital learning tools"],
         },
         file: "/files/Maqola pdf/Barno Rahmatullayeva.pdf",
       },
@@ -541,7 +591,26 @@ fаirness in mаnаgement prоcesses.`,
         abstract: {
           uz: "",
           ru: "",
-          en: "This article examines the role of technology in second language acquisition. Various technological tools and their impact on language learning processes are analyzed.",
+          en: `The rapid advancement of digital technologies has profoundly 
+transformed educational practices, particularly in the field of second language 
+acquisition (SLA). Technology-mediated language learning environments have 
+expanded beyond traditional classrooms to include computer-assisted language 
+learning (CALL), mobile-assisted language learning (MALL), virtual learning 
+environments, artificial intelligence (AI)-driven tools, and immersive technologies 
+such as virtual and augmented reality. This scientific article examines the 
+multifaceted role of technology in second language acquisition by analyzing 
+theoretical foundations, empirical studies, and pedagogical applications. Drawing on 
+constructivist, sociocultural, and cognitive theories of SLA, the study explores how 
+technology enhances input, interaction, feedback, learner autonomy, and motivation. 
+A systematic review of relevant literature is conducted to identify key trends, 
+benefits, and challenges associated with technology integration in language 
+education. The results section presents tables and figures derived from synthesized 
+empirical findings, illustrating the impact of various technologies on language skills 
+development, learner engagement, and learning outcomes. The article concludes that 
+while technology is not a panacea, its thoughtful and pedagogically grounded 
+integration significantly enhances second language acquisition by providing 
+authentic input, personalized learning pathways, and opportunities for meaningful 
+communication`,
         },
         pages: "99-107",
         publishDate: "19.01.2026",
@@ -552,7 +621,7 @@ fаirness in mаnаgement prоcesses.`,
         keywords: {
           uz: [],
           ru: [],
-          en: ["technology", "second language acquisition", "language learning"],
+          en: ["Second language acquisition", "educational technology", "CALL", "MALL", "digital learning", "language pedagogy", "learner autonomy", "technology-enhanced learning"],
         },
         file: "/files/Maqola pdf/Ergasheva Fariza.pdf",
       },
@@ -565,15 +634,50 @@ fаirness in mаnаgement prоcesses.`,
         title: {
           uz: "",
           ru: "",
-          en: "Derivational and semantic principles of ecological terminology in uzbek and English",
+          en: "DERIVATIONAL AND SEMANTIC PRINCIPLES OF ECOLOGICAL TERMINOLOGY IN UZBEK AND ENGLISH: A COMPARATIVE AND LINGUISTIC APPROACH",
         },
         authors: "Ruziyeva Muhayyo Baxtiyor qizi",
         category: "linguistics",
         year: "2026",
         abstract: {
-          uz: "",
-          ru: "",
-          en: "The article investigates derivational and semantic principles of ecological terminology in Uzbek and English languages. A comparative analysis of term formation patterns is presented.",
+          uz: `Mazkur maqola ingliz va o‘zbek tillaridagi ekologik 
+terminlarning derivatsion va semantik prinsiplari qiyosiy tilshunoslik nuqtai 
+nazaridan o‘rganadi. Tadqiqotning maqsadi so‘z yasalish modellari, semantik 
+o‘zgarishlar va ikki til o‘rtasidagi o‘xshashlik va farqlarni aniqlashdir. Korpusga 
+asoslangan tavsifiy-qiyosiy metod yordamida ekologik terminlar affiksatsiya, 
+qo‘shma so‘zlar, konversiya, o‘zlashma va semantik kengayish kabi mexanizmlarga 
+ko‘ra tahlil qilindi. Natijalar shuni ko‘rsatadiki, ingliz tilida terminologiya ko‘proq 
+qo‘shma so‘zlar va Grek-Lotin affikslari orqali rivojlanadi, o‘zbek tilida esa milliy 
+affikslar va semantik moslashuv yetakchi o’rinni egallaydi. Mazkur maqola qiyosiy 
+terminologiya, tarjima va ekologik diskurs sohalariga hissa qo‘shadi.`,
+          ru: `В данной статье рассматриваются деривационные 
+и семантические принципы формирования экологических терминов 
+в английском и узбекском языках с позиции сравнительной лингвистики. Цель 
+исследования заключается в выявлении моделей словообразования, 
+семантических изменений, а также сходств и различий между двумя языками. 
+С использованием описательно-сравнительного метода на основе корпусного 
+анализа экологические термины были проанализированы по таким 
+механизмам, как аффиксация, словосложение, конверсия, заимствование и 
+семантическая деривация. Результаты исследования показывают, что в 
+английском языке терминология преимущественно развивается через 
+словосложение 
+и использование греко-латинских аффиксов, в то время как в узбекском языке 
+ведущую роль играют национальные аффиксы и семантическая адаптация. 
+Данная работа вносит вклад в области сравнительного терминоведения, 
+переводоведения и экологического дискурса`,
+          en: `This article examines the derivational and semantic 
+principles of ecological terms in English and Uzbek from a comparative linguistics 
+perspective. In this paper the focus is on the word formation models, the changes in 
+meaning and the similarities and differences in the conceptualization of ecological 
+phenomena. 
+A corpus based descriptive comparative research method was used to analyze 
+ecological terms in the framework of derivational mechanisms such as affixation, 
+compounding, conversion, borrowing and semantic broadening. The analysis shows 
+that compounding and Greco-Latin affixation are more prevalent in the ecological 
+terms of the English language. Whereas in the ecological terms of the Uzbek 
+language the predominant means are native affixation, calque translation and 
+semantic adjustment. This research has a value in comparative studies of 
+terminology and in translation studies, lexicography and environmental discourse.`,
         },
         pages: "108-117",
         publishDate: "19.01.2026",
@@ -582,9 +686,9 @@ fаirness in mаnаgement prоcesses.`,
         downloads: 95,
         language: "English",
         keywords: {
-          uz: [],
-          ru: [],
-          en: ["ecological terminology", "derivation", "semantics", "Uzbek", "English"],
+          uz: ["ekologik terminlar", "derivatsiya", "semantika", "qiyosiy tilshunoslik", "ekolingvistika", "o‘zbek tilshunosligi", "ingliz ilmiy terminologiyasi birikmalar", "ekologik siyosat", "leksik o‘zlashma (o‘zlashgan so‘zlar)"],
+          ru: ["экологические термины", "деривация", "семантика", "сравнительная лингвистика", "эколингвистика", "узбекское языкознание", "английская научная терминология", "композиты", "экологическая политика", "лексическое заимствование"],
+          en: ["ecological terminology", "derivation", "semantics", "comparative linguistics", "Ecolinguistics", "Derivational Morphology", "Uzbek Linguistics", "English Scientific Terminology", "Neoclassical Compounds", "Environmental Policy", "Lexical Borrowings"],
         },
         file: "/files/Maqola pdf/Рузиева М.Б. мақола.pdf",
       },
@@ -597,7 +701,7 @@ fаirness in mаnаgement prоcesses.`,
         title: {
           uz: "",
           ru: "",
-          en: "The use of multimedia tools in developing oral speech skills in the educational process",
+          en: "THE USE OF MULTIMEDIA TOOLS IN DEVELOPING ORAL SPEECH SKILLS IN THE EDUCATIONAL PROCESS: PRACTICAL EXPERIENCE",
         },
         authors: "Sayidova Moxichexra Islomovna",
         category: "pedagogy",
@@ -605,7 +709,16 @@ fаirness in mаnаgement prоcesses.`,
         abstract: {
           uz: "",
           ru: "",
-          en: "The article discusses the use of multimedia tools in developing oral speech skills in the educational process. The effectiveness of various multimedia resources in language education is examined.",
+          en: `The rapid development of information and communication 
+technologies has significantly influenced modern education. Multimedia tools have 
+become an integral part of the teaching and learning process, especially in foreign 
+language education. This article examines the role of multimedia tools in developing 
+learners’ oral speech skills within the educational process. Based on practical 
+teaching experience, the study highlights the effectiveness of using audio-visual 
+materials, interactive platforms, and digital applications to improve speaking 
+competence, pronunciation, fluency, and communicative confidence. The findings 
+suggest that multimedia-based instruction increases learners’ motivation and creates 
+a more interactive and student-centered learning environment.`,
         },
         pages: "118-121",
         publishDate: "19.01.2026",
@@ -616,7 +729,8 @@ fаirness in mаnаgement prоcesses.`,
         keywords: {
           uz: [],
           ru: [],
-          en: ["multimedia", "oral speech", "educational process", "language skills"],
+          en: ["multimedia tools", "oral speech skills", "foreign language education", 
+"speaking competence", "educational technology"],
         },
         file: "/files/Maqola pdf/Maqola Sayidova M+++++.pdf",
       },
@@ -635,9 +749,42 @@ fаirness in mаnаgement prоcesses.`,
         category: "pedagogy",
         year: "2026",
         abstract: {
-          uz: "Maqolada institutsional yondashuv asosida bo'lajak pedagoglarda kasbiy madaniyatni shakllantirish masalalari ko'rib chiqilgan. Pedagogik kadrlar tayyorlash tizimidagi zamonaviy yondashuvlar tahlil qilingan.",
-          ru: "",
-          en: "",
+          uz: `Mazkur maqolada bo‘lajak pedagoglarda kasbiy madaniyatni 
+shakllantirish jarayoni institutsional yondashuv asosida ilmiy-nazariy jihatdan tahlil 
+qilingan. Tadqiqotda zamonaviy ijtimoiy-iqtisodiy sharoitda pedagog shaxsiga 
+qo‘yilayotgan kasbiy, axloqiy va madaniy talablar ochib berilib, kasbiy 
+madaniyatning mazmuni va tarkibiy komponentlari asoslab berilgan. Ilmiyadabiyotlar tahlili asosida bo‘lajak o‘qituvchilarning kasbiy madaniyatini 
+rivojlantirishda institutsional mexanizmlarning roli aniqlangan hamda mazkur 
+yondashuvning pedagogik ta’lim jarayonidagi samaradorligi asoslangan. Tadqiqot 
+natijalari pedagog kadrlar tayyorlash tizimini takomillashtirish, bo‘lajak 
+pedagoglarda professionallik, kasbiy layoqatlilik va axloqiy yetuklikni 
+shakllantirishda amaliy ahamiyatga ega`,
+          ru: `статье с научно-теоретической точки зрения 
+рассматривается процесс формирования профессиональной культуры 
+будущих педагогов на основе институционального подхода. В исследовании 
+раскрываются профессиональные, нравственные и культурные требования, 
+предъявляемые к личности педагога в современных социально-экономических 
+условиях, а также обосновываются содержание и структурные компоненты 
+профессиональной культуры. На основе анализа научной литературы 
+определена роль институциональных механизмов в развитии 
+профессиональной культуры будущих учителей и аргументирована 
+123
+эффективность данного подхода в системе педагогического образования. 
+Результаты исследования имеют практическое значение для 
+совершенствования системы подготовки педагогических кадров, а также для 
+формирования профессионализма, профессиональной компетентности и 
+нравственной зрелости будущих педагогов`,
+          en: `This article provides a scientific and theoretical analysis of the 
+process of forming the professional culture of future teachers based on an 
+institutional approach. The study reveals the professional, moral, and cultural 
+requirements imposed on the teacher’s personality in contemporary socio-economic 
+conditions and substantiates the content and structural components of professional 
+culture. Based on the analysis of scholarly literature, the role of institutional 
+mechanisms in developing the professional culture of future teachers is identified, 
+and the effectiveness of this approach in teacher education is justified. The research 
+findings have practical significance for improving the teacher training system and 
+for fostering professionalism, professional competence, and moral maturity among 
+future educators`,
         },
         pages: "122-131",
         publishDate: "19.01.2026",
@@ -646,9 +793,12 @@ fаirness in mаnаgement prоcesses.`,
         downloads: 115,
         language: "O'zbek",
         keywords: {
-          uz: ["institutsional yondashuv", "kasbiy madaniyat", "pedagog", "ta'lim"],
-          ru: [],
-          en: [],
+          uz: ["bo‘lajak pedagog", "kasbiy madaniyat", "institutsional yondashuv", 
+"pedagogik ta’lim", "kasbiy kompetensiya", "pedagog shaxsi"],
+          ru: ["будущий педагог", "профессиональная культура", 
+"институциональный подход", "педагогическое образование", "профессиональная компетентность", "личность педагога"],
+          en: ["future teacher", "professional culture", "institutional approach", 
+"teacher education", "professional competence", "teacher personality"],
         },
         file: "/files/Maqola pdf/Murodullo Hamroyev.pdf",
       },
@@ -661,7 +811,7 @@ fаirness in mаnаgement prоcesses.`,
         title: {
           uz: "",
           ru: "",
-          en: "Utilizing multimodal pedagogy: combining visual, spatial, gestural, audio, and linguistic modes",
+          en: `UTILIZING MULTIMODAL PEDAGOGY: COMBINING VISUAL, SPATIAL, GESTURAL, AUDIO, AND LINGUISTIC MODES TO BOOST COMPREHENSION AND ENGAGEMENT`,
         },
         authors: "Madina Muzaffarova Umid qizi",
         category: "pedagogy",
@@ -669,7 +819,15 @@ fаirness in mаnаgement prоcesses.`,
         abstract: {
           uz: "",
           ru: "",
-          en: "The article explores multimodal pedagogy that combines visual, spatial, gestural, audio, and linguistic modes in education. Practical implications for modern teaching are discussed.",
+          en: `This article mainly explores the influence of multimodal 
+pedagogy in English language teaching by focusing on how the integration of visual, 
+spatial, gestural, audio, and linguistic modes can develop students’ comprehension 
+and engagement. In addition, table is also provided based on the results of students’ 
+involvement and participation during the lesson. Based on recent research and 
+classroom experiences, we can come to the point that it provides practical strategies 
+and evidence-based information for educators who are seeking to enrich their 
+teaching practices. This powerful method can be of great importance while teaching 
+English effectively to language learners`,
         },
         pages: "132-135",
         publishDate: "19.01.2026",
@@ -680,7 +838,8 @@ fаirness in mаnаgement prоcesses.`,
         keywords: {
           uz: [],
           ru: [],
-          en: ["multimodal pedagogy", "visual", "linguistic modes", "teaching"],
+          en: ["multimodal pedagogy", "English language teaching", "visual learning", "audio learning", 
+"gestures", "classroom engagement", "comprehension", "teacher-student interaction"],
         },
         file: "/files/Maqola pdf/Muzaffarova Madina.pdf",
       },
@@ -699,9 +858,37 @@ fаirness in mаnаgement prоcesses.`,
         category: "psychology",
         year: "2026",
         abstract: {
-          uz: "Maqolada yoshlar emotsional intellekti va ijtimoiy muloqot ko'nikmalari o'rtasidagi bog'liqlik tadqiq qilingan. Emotsional intellektning shaxslararo munosabatlarga ta'siri tahlil qilingan.",
-          ru: "",
-          en: "",
+          uz: `Mazkur ilmiy maqolada yoshlar emotsional intellekti va 
+ularning ijtimoiy muloqot ko‘nikmalari o‘rtasidagi o‘zaro bog‘liqlik masalasi ilmiy 
+jihatdan tahlil etilgan. Tadqiqotning dolzarbligi zamonaviy jamiyatda yoshlarning 
+ijtimoiy moslashuvi, samarali kommunikatsiyasi va shaxslararo munosabatlardagi 
+muvaffaqiyatini belgilovchi muhim omillardan biri sifatida emotsional intellektning 
+ahamiyati bilan izohlanadi. Tadqiqot jarayonida nazariy tahlil, so‘rovnoma, kuzatuv 
+va statistik tahlil metodlaridan foydalanildi. Olingan natijalar emotsional intellekt 
+darajasi yuqori bo‘lgan yoshlar ijtimoiy muloqot jarayonida yuqori empatiya, 
+kommunikativ moslashuvchanlik va ijtimoiy faollikni namoyon etishini ko‘rsatdi. 
+Tadqiqot xulosalari ta’lim jarayonida emotsional intellektni rivojlantirishga 
+qaratilgan pedagogik texnologiyalarni joriy etish zarurligini asoslaydi.`,
+          ru: `B cтатье рассматривается взаимосвязь между 
+эмоциональным интеллектом молодежи и их навыками социального общения. 
+Актуальность исследования определяется возрастающей ролью 
+эмоционального интеллекта в обеспечении эффективного межличностного 
+взаимодействия и социальной адаптации молодежи. В ходе исследования 
+использовались методы теоретического анализа, анкетирования, наблюдения 
+и статистической обработки данных. Результаты исследования показывают, 
+что высокий уровень эмоционального интеллекта способствует развитию 
+эмпатии, коммуникативной гибкости и социальной активности молодежи. 
+Полученные выводы имеют практическое значение для совершенствования 
+психолого-педагогической работы с молодежью`,
+          en: `This article analyzes the relationship between emotional 
+intelligence and social communication skills among young people. The relevance of 
+the study is determined by the growing importance of emotional intelligence as a 
+key factor in social adaptation and effective interpersonal interaction. The research 
+employed theoretical analysis, questionnaires, observation, and statistical methods. 
+The findings indicate that a higher level of emotional intelligence is associated with 
+greater empathy, communicative flexibility, and social activity among youth. The 
+conclusions support the integration of emotional intelligence development strategies 
+into educational practice`,
         },
         pages: "136-141",
         publishDate: "19.01.2026",
@@ -710,9 +897,9 @@ fаirness in mаnаgement prоcesses.`,
         downloads: 108,
         language: "O'zbek",
         keywords: {
-          uz: ["emotsional intellekt", "ijtimoiy muloqot", "yoshlar", "psixologiya"],
-          ru: [],
-          en: [],
+          uz: ["emotsional intellekt", "ijtimoiy muloqot", "kommunikativ kompetensiya", "empatiya", "yoshlar", "ijtimoiy moslashuv", "shaxslararo munosabatlar"],
+          ru: ["эмоциональный интеллект", "социальное общение", "коммуникативные навыки", "эмпатия", "молодежь", "социальная компетентность"],
+          en: ["emotional intelligence", "social communication", "interpersonal skills", "empathy", "youth", "social competence"],
         },
         file: "/files/Maqola pdf/Qodirova Aziza Kamolovna.pdf",
       },
@@ -731,9 +918,38 @@ fаirness in mаnаgement prоcesses.`,
         category: "linguistics",
         year: "2026",
         abstract: {
-          uz: "Maqolada sotsiolingvistik metod va metodlar masalasi ko'rib chiqilgan. Tilshunoslikdagi sotsiolingvistik tadqiqot usullari va ularning qo'llanilishi tahlil qilingan.",
+          uz: `Sotsiolingvistika fanining shakllanishi XX asrning o‘rtalariga
+to‘g‘ri keladi va bu yo‘nalish tilshunoslikda yangi ilmiy qarashlarning paydo
+bo‘lishiga sabab bo‘ldi. Tilni ijtimoiy hodisa sifatida o‘rganish nafaqat tilning 
+strukturaviy xususiyatlarini, balki uning jamiyatdagi ijtimoiy funksiyalarini ham 
+tushunishga yordam beradi. Aynan shuning uchun sotsiolingvistik tadqiqotlarda 
+qo‘llaniladigan metodlar dolzarb bo‘lib, tilni amaliy nuqtayi nazardan o‘rganishga 
+yo‘naltirilgan. Ushbu metodlar yordamida tildagi nutqiy variantlar, dialektlar, 
+jargonlar, til o‘zgarishlari va ularning sabablari chuqur tahlil qilinadi. Shuningdek, 
+sotsiolingvistik metodlar til va ijtimoiy muhit o‘rtasidagi uzviy bog‘liqlikni ochib 
+beradi, bu esa tilshunoslik sohasida yangi ilmiy yondashuvlar yaratish imkonini 
+beradi. Maqolaning dolzarbligi ham shundaki, til va jamiyat o‘rtasidagi o‘zaro 
+aloqani to‘g‘ri tushunish orqali, til siyosati, til madaniyati, ta’lim va ommaviy 
+axborot vositalarida tilning to‘g‘ri qo‘llanishini ta’minlashdir. Sotsiolingvistik 
+metodlar til hodisalarini hayotiy muhitda, ya’ni tabiiy sharoitda o‘rganishga imkon 
+beruvchi usullardir. Ular orasida kuzatuv, intervyu, so‘rovnoma, statistik tahlil, 
+eksperiment kabi metodlar keng qo‘llaniladi. Har bir metodning o‘ziga xos 
+yondashuvi, afzalliklari va chegaralari mavjud bo‘lib, tadqiqotning mohiyatiga 
+qarab tanlanadi. Ushbu maqolada sotsiolingvistik metodlarning turlari, ularning 
+afzallik va kamchiliklari, amaliyotda qo‘llanilishi hamda ilmiy-tadqiqot 
+jarayonidagi o‘rni yoritiladi`,
           ru: "",
-          en: "",
+          en: `The formation of the didcripline of sociolinguistics dates back to the 
+moddle of the 20th century, and this derection led to the emergence of new scientific 
+views in linguistics. The study of language as asocial phenomenon helps to 
+understand not only the structural features of language, but also its social functions 
+142
+in society. That is why the methodes used in sociolinguisticresearch are relevant and 
+are aimed at studyinglanguage from a practical point of view. With the help of these 
+methods, speech variants, dialects, jargons, language changes in the language and 
+their causes are deeply analyzed. Also, sociolinguistic methods reveal the 
+inextricable link between language and the social environment, which makes it 
+possible to create new scientific approaches in the field of linguistics`,
         },
         pages: "142-149",
         publishDate: "19.01.2026",
@@ -742,7 +958,7 @@ fаirness in mаnаgement prоcesses.`,
         downloads: 118,
         language: "O'zbek",
         keywords: {
-          uz: ["sotsiolingvistika", "metod", "tilshunoslik", "tadqiqot usullari"],
+          uz: ["sotsiolingvistika", "tadqiqot", "metod", "kuzatuv", "intervyu", "statistik tahlil", "eksperiment", "so‘rovnoma"],
           ru: [],
           en: [],
         },
@@ -763,9 +979,28 @@ fаirness in mаnаgement prоcesses.`,
         category: "linguistics",
         year: "2026",
         abstract: {
-          uz: "Maqolada talabalarda til o'rganish motivatsiyasini shakllantirishning ilmiy asoslari ko'rib chiqilgan. Motivatsiyaning til o'rganish jarayonidagi o'rni va uni rivojlantirish yo'llari tahlil qilingan.",
-          ru: "",
-          en: "",
+          uz: `Ushbu maqolada talabalarda chet tilini o‘rganishga bo‘lgan 
+motivatsiyaning shakllanish jarayoni, uning psixologik, pedagogik va ijtimoiy 
+omillari tahlil qilinadi. Shuningdek, ta’lim jarayonida motivatsiyani 
+mustahkamlashga xizmat qiluvchi innovatsion metodlar, didaktik yondashuvlar va 
+amaliy tavsiyalar bayon etiladi. Tadqiqot natijalari zamonaviy oliy ta’lim tizimida 
+til o‘rgatish samaradorligini oshirishga qaratilgan`,
+          ru: `В данной статье анализируется процесс формирования мотивации студентов к 
+изучению иностранного языка, а также его психологические, педагогические 
+и социальные факторы. Кроме того, рассматриваются инновационные методы, 
+дидактические подходы и практические рекомендации, способствующие 
+укреплению мотивации в образовательном процессе. Результаты 
+исследования направлены на повышение эффективности обучения языкам в 
+современной системе высшего образования`,
+          en: `This article provides an in-depth analysis of the formation of students’ motivation to 
+learn a foreign language, examining its underlying psychological, pedagogical, and 
+socio-cultural determinants. Furthermore, the study explores innovative 
+instructional methods, contemporary didactic frameworks, and evidence-based 
+practical recommendations designed to enhance motivational engagement within the 
+educational process. The findings of the research contribute to improving the 
+151
+effectiveness of foreign language instruction in the context of modern higher 
+education systems.`,
         },
         pages: "150-156",
         publishDate: "19.01.2026",
@@ -795,9 +1030,36 @@ fаirness in mаnаgement prоcesses.`,
         category: "psychology",
         year: "2026",
         abstract: {
-          uz: "Maqolada shaxs psixologik barqarorligini ta'minlashda himoya mexanizmlarining funksional xususiyatlari tadqiq qilingan. Psixologik himoya mexanizmlari va ularning shaxs barqarorligiga ta'siri tahlil qilingan.",
-          ru: "",
-          en: "",
+          uz: `Ushbu maqolada shaxs psixologik barqarorligini ta’minlashda 
+ongsiz psixologik himoya mexanizmlarining funksional xususiyatlari va ularning 
+ijtimoiy adaptatsiyadagi o‘rni tizimli ravishda tahlil qilinadi. Zamonaviy dunyoning 
+shiddatli axborot oqimi va ijtimoiy-iqtisodiy dinamikasi sharoitida inson 
+ruhiyatining ichki muvozanatini saqlash masalasi strategik ahamiyat kasb etib, bu 
+borada psixologik himoya mexanizmlari “xavfsizlik yostiqchalari” vazifasini o‘tashi 
+ko‘rsatib o‘tilgan. Maqolada ushbu mexanizmlarning ikki yoqlama tabiati – bir 
+tomondan emotsional inqirozdan himoya qilishi, ikkinchi tomondan reallikni buzib 
+ko‘rsatish orqali shaxsiy o‘sishga to‘sqinlik qilishi mumkinligi ilmiy asoslab 
+berilgan`,
+          ru: `В данной статье систематически анализируются 
+функциональные особенности бессознательных механизмов психологической 
+защиты и их роль в социальной адаптации при обеспечении психологической 
+устойчивости личности. В условиях интенсивного информационного потока и 
+социально-экономической динамики современного мира вопрос сохранения 
+внутреннего равновесия психики приобретает стратегическое значение, при 
+этом механизмы психологической защиты рассматриваются как своеобразные 
+«подушки безопасности». В статье научно обоснована дуалистическая 
+природа данных механизмов: с одной стороны, они оберегают личность от 
+эмоциональных кризисов, с другой – могут препятствовать личностному 
+росту, искажая восприятие реальности`,
+          en: `This article systematically analyzes the functional characteristics of 
+unconscious psychological defense mechanisms and their role in social adaptation 
+within the framework of ensuring individual psychological stability. Amidst the 
+rapid information flow and socio-economic dynamics of the modern world, 
+maintaining the internal equilibrium of the human psyche has acquired strategic 
+importance, where psychological defense mechanisms serve as specific "safety 
+cushions". The article scientifically substantiates the dual nature of these 
+mechanisms: on one hand, they protect the individual from emotional crises, while 
+on the other, they may hinder personal growth by distorting reality`,
         },
         pages: "157-166",
         publishDate: "19.01.2026",
@@ -806,9 +1068,9 @@ fаirness in mаnаgement prоcesses.`,
         downloads: 147,
         language: "O'zbek",
         keywords: {
-          uz: ["psixologik barqarorlik", "himoya mexanizmlari", "shaxs", "funksional xususiyatlar"],
-          ru: [],
-          en: [],
+          uz: ["psixologik barqarorlik", "himoya mexanizmlari", "emotsional muvozanat", "adaptatsiya", "kognitiv dissonans", "ontogenetik rivojlanish", "ratsionalizatsiya", "sublimatsiya", "intellektualizatsiya", "ichki muvozanat", "psixologik xavfsizlik", "psixologik yordam", "maladaptiv holat"],
+          ru: ["психологическая устойчивость", "механизмы защиты", "эмоциональное равновесие", "адаптация", "когнитивный диссонанс", "онтогенетическое развитие", "рационализация", "сублимация", "интеллектуализация", "внутренний баланс", "психологическая безопасность", "психологическая помощь", "маладаптивное состояние"],
+          en: ["psychological stability", "defense mechanisms", "emotional equilibrium", "adaptation", "cognitive dissonance", "ontogenetic development", "rationalization", "sublimation", "intellectualization", "internal balance", "psychological security", "psychological assistance", "maladaptive state"],
         },
         file: "/files/Maqola pdf/Shaxs psixologik barqarorligini ta.pdf",
       },
@@ -829,7 +1091,17 @@ fаirness in mаnаgement prоcesses.`,
         abstract: {
           uz: "",
           ru: "",
-          en: "The article examines strategies for improving writing productivity of English philology students in higher education. Effective approaches to academic writing instruction are analyzed.",
+          en: `Writing productivity is a critical component of academic literacy for English 
+philology students, as it reflects their ability to generate coherent, fluent, and 
+contextually appropriate written texts. Despite adequate theoretical knowledge, 
+many students face challenges in sustaining writing fluency and producing extended 
+academic texts. This article investigates pedagogical methods aimed at improving 
+writing productivity among English philology students in higher education. Drawing 
+on established research in second language writing, the study examines the 
+effectiveness of process-based writing instruction, genre integration, collaborative 
+learning, formative feedback, and digital tools. The analysis indicates that systematic 
+and learner-centered writing instruction leads to significant improvements in 
+students’ writing output and overall writing competence`,
         },
         pages: "167-170",
         publishDate: "19.01.2026",
@@ -840,7 +1112,7 @@ fаirness in mаnаgement prоcesses.`,
         keywords: {
           uz: [],
           ru: [],
-          en: ["writing productivity", "English philology", "higher education", "academic writing"],
+          en: ["writing productivity", "English philology students", "academic writing", "process-based writing", "collaborative learning", "higher education"],
         },
         file: "/files/Maqola pdf/Umida Jalilova.pdf",
       },
